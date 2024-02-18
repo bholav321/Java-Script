@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<pre>
+<script>
+    function peak(size,array){
+    document.write("<br>Array is : ")
+    for(i=0; i<size; i++){
+        document.write(" "+array[i])
+    }
+    document.write("<br>Peak elements are : ")
+    for(i=1; i<size-1; i++){
+        if(array[i]>array[i-1] && array[i]>array[i+1])
+        document.write(array[i]+" ")
+    }
+    if(array[0]>array[1])
+    document.write(array[0]+" ")
+    if(array[array.length-1]>array[array.length-2])
+    document.write(array[array.length-1])
+    }
+    var size = prompt("Enter the size of array ")*1;
+    var array = new Array(size);
+    for(i=0; i<size; i++){
+        array[i] = (prompt("Enter the "+(i+1)+" element "))*1;
+    }
+    peak(size,array);
+</script>
+</pre>
+</body>
+</html>

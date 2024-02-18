@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q.2 Find minimum and maximum element in array -->
+<pre>
+<script>
+    var size = prompt("Enter the size of array ")*1;
+    var array = new Array(size);
+    for(i=0; i<size; i++){
+        array[i] = (prompt("Enter the "+(i+1)+" element "))*1;
+    }
+    document.write("<br>Array is : ")
+    for(i=0; i<array.length; i++){
+        document.write(" "+array[i])
+    }
+    max = array[0], min = array[0];
+   for(i=0; i<array.length; i++){
+        if(max<array[i])
+        max = array[i]
+        if(min>array[i])
+        min = array[i]
+   }
+   document.write("<br>Maximum element  = "+max+" <br> Minimum element "+min)
+</script>
+</pre>
+</body>
+</html>

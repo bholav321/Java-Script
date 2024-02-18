@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+<script>
+    var temp=0;
+    var size = prompt("Enter the size of array ")*1;
+    var array = new Array(size);
+    for(let i=0; i<array.length; i++){
+        array[i] = (prompt("Enter "+(i+1)+" element "));
+    }
+    document.write("Array is "+array);
+
+    for(let i=0; i<array.length; i++){
+        for(let j=0; j<array.length; j++){
+            if(array[i]<array[j]){
+                temp=array[i];
+                array[i]=array[j];
+                array[j]=temp;
+            }
+        }
+    }
+    document.write("<br>"+array)
+</script>
+    </pre>
+</body>
+</html>

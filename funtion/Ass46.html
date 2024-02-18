@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>46) WAP to find out the sum of first and last digit of a user entered number</p>
+    <pre>
+<script>
+    function interchange(num){
+        let rev = 0;
+        let originalNum = num;
+        while(num>0){
+            let rem = num%10;
+            rev  = rev*10 + rem;
+            num = parseInt(num/10);
+        }
+        document.write(rev)
+       var sum1 = rev%10;
+       var sum2 = originalNum%10;
+       sum = sum1+sum2;
+        document.write("Final sum = "+sum)
+    }
+    interchange(1234);
+</script>
+    </pre>
+</body>
+</html>

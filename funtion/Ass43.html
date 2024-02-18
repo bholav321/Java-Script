@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>43) WAP to convert binary number into decimal number</p>
+<pre>
+<script>
+function getDecimal(binary){  
+    let decimal = 0;  
+    let n = 0;  
+    while(true){  
+      if(binary == 0){  
+        break;  
+      } else {  
+          let temp = binary%10;  
+          decimal += temp*2**n;  
+          binary = parseInt(binary/10);  
+          n++;  
+       }  
+    }  
+    document.write("Decimal number = "+decimal) 
+}  
+ var num = prompt("Enter the binary number ")
+ var result =   getDecimal(num);
+
+</script>
+</pre>
+</body>
+</html>

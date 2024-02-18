@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(x){
+            return function f2(y){
+                return function f3(z){
+                    document.write("Value of x = "+x);
+                    document.write("<br>Value of y = "+y);
+                    document.write("<br>Value of z = "+z);
+                    return x+y+z;
+                }
+            }
+        }
+        var result = f1(2)(3)(4);
+        document.write("<br>Result = "+result)
+    </script>
+</body>
+</html>

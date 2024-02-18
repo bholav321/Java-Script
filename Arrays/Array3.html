@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Q.3 Write a program to reverse the array. -->
+<pre>
+<script>
+    var size = prompt("Enter the size of array ")*1;
+    var array = new Array(size);
+    for(i=0; i<size; i++){
+        array[i] = (prompt("Enter the "+(i+1)+" element "))*1;
+    }
+    document.write("<br>Array is : ")
+    for(i=0; i<array.length; i++){
+        document.write(" "+array[i])
+    }
+    var newArray = new Array(array.length);
+    j=0;
+    for(let i=array.length-1; i>=0; i--){
+        newArray[j]=array[i];
+        j++;
+    }
+    document.write("<br>reverse Array is ")
+    for(var i=0; i<newArray.length; i++){
+    array[i]=newArray[i];
+}
+document.write(array);
+</script>
+</pre>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>18) 1	2	2	4	8	32	…… n terms	</p>
+<pre>
+<script>
+    var ele = 1 , ele2 = 2 ;
+    function naturalNumber(number, callback){
+        if(number>0){
+            document.write(" " + ele +" "+ ele2)
+        for(i=1; i<=number; i++){ 
+            ele = ele*2;
+             document.write(" "+ele)
+        }
+        }
+        else{
+            callback();
+        }
+    }
+    n = prompt("Enter a number : ")
+    naturalNumber(n,function(){
+        document.write(new Error("Invalid Input"))
+    })
+</script>
+</pre>
+</body>
+</html>

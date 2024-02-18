@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>16) …...-9 -6	-3	0	3	6	9	……. n terms	</p>
+<pre>
+<script>
+    function capitalAlphabet(n,callback){
+        document.write("<p style='font-size:25px;'>")
+            if(n>0){
+        for(let i=-3*n;i<=n*3;i++){
+            if(i%3==0)
+            document.write(i+" ")
+        }
+    }
+    else{
+        callback();
+    }
+    }
+    n = prompt("Enter the number ")*1
+    capitalAlphabet(n,function(){
+        document.write("<span style='color:red; font-size:30px;'>Invalid Input<br></span>")
+    });
+    </script>
+    </pre>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>44) WAP to interchange first and last digit of a number</p>
+    <pre>
+<script>
+    function interchange(num){
+        let rev = 0;
+        let originalNum = num;
+        while(num>0){
+            let rem = num%10;
+            rev  = rev*10 + rem;
+            num = parseInt(num/10);
+        }
+        
+        let rem1 = originalNum%10;
+        let rem2 = rev%10;
+
+        document.write(rev)
+        
+    }
+    interchange(1234);
+</script>
+    </pre>
+</body>
+</html>
